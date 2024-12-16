@@ -11,8 +11,6 @@ jobs:
       contents: read
       pages: write
       id-token: write
-    environment:
-      name: github-pages  # Added this line to specify the environment
       
     steps:
       - uses: actions/checkout@v4
