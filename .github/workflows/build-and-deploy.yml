@@ -21,10 +21,9 @@ jobs:
       - name: "Setup R dependency for Shinylive App export"
         uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          packages:
-            cran:
-              - shinylive
-              - jsonlite
+          packages: |
+            cran::shinylive
+            cran::jsonlite
       
        # Set up Python
       - name: Set up Python
